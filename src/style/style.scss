@@ -1,0 +1,1011 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;600;500;700;800&display=swap');
+$ANIMATION_DURATION: 1s;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1f1c29;
+    font-family: 'Tajawal', sans-serif;
+    color: #fff;
+    height: 4500px;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: #312837;
+    padding: 15px 0;
+
+    .Nav-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+
+    .Nav-icon {
+        width: 50px;
+    }
+    
+    .Nav-links {
+        margin-top: 15px;
+    }
+
+    .navbar-links-ul {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+
+        li {
+            margin: 0 20px;
+            &:hover {
+                border-bottom: #7a65bd 4px solid;
+            }
+        }
+    }
+}
+
+.navbar-links-ul, .NavIcons {
+    display: flex;
+    list-style: none;
+}
+
+.NavIcons {
+    margin-top: 15px;
+
+    li {
+        margin: 5px 15px;
+
+        svg {
+            fill: none;
+            stroke: #fff;
+            transition: .3s;
+
+            &:hover {
+                stroke: #7a65bd;
+            }
+        }
+    }
+
+    li:nth-of-type(2) {
+        margin-top: -17px;
+    }
+
+    .prodcuts-number {
+        color: #fff;
+        background-color: #7a65bd;
+        text-align: center;
+        width: 15px;
+        height: 16px;
+        border-radius: 10px;
+        position: relative;
+        left: 17px;
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+
+}
+
+.home-page {
+    .bg {
+        width: 100%;
+        height: 800px;
+        background-image: url('../Images/stretched-1920-1080-1077274.jpg');
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 10;
+        z-index: -1;
+    }
+
+    .home-page-content {
+        position: relative;
+        top: 200px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .game-detail {
+            width: 500px;
+            margin-top: 20px;
+            h1 {
+                font-weight: 800;
+                color: #fff;
+                border-radius: 2px;
+                padding-left: 10px;
+                padding-bottom: 10px;
+            }
+
+            #title-word {
+                color: #7a65bd;
+            }
+
+            p {
+                color: #9590a8;
+                font-weight: 600;
+                margin-top: 20px;
+                margin-left: 15px;
+            }
+
+            .btn {
+                color: #fff;
+                background-color: #7a65bd;
+                margin-top: 30px;
+                margin-left: 15px;
+                width: 150px;
+                transition: .5s;
+                &:hover {
+                    background-color: #fff;
+                    color: #1f1c29;
+                }
+            }
+
+            .game-rating-home {
+                margin-top: 20px;
+                margin-left: 15px;
+            }
+        }
+
+    }
+
+    .game-promo {
+        width: 600px;
+        height: 500px;
+
+        .vid-promo {
+            width: 100%;
+        }
+    }
+
+}
+
+  // Fade In Left
+  //--------------------------------//
+  @-webkit-keyframes fadeInLeft {
+    0%   { opacity: 0; -webkit-transform: translate3d(-50%, 0, 0);}
+    100% { opacity: 1; -webkit-transform: none; }
+  }
+  @-moz-keyframes fadeInLeft {
+    0%   { opacity: 0; -moz-transform: translate3d(-50%, 0, 0); }
+    100% { opacity: 1; -moz-transform: none; }
+  }
+  @-o-keyframes fadeInLeft{
+    0%   { opacity: 0; -o-transform: translate3d(-50%, 0, 0); }
+    100% { opacity: 1; -o-transform: none; }
+  }
+  @keyframes fadeInLeft {
+    0%   { opacity: 0; transform: translate3d(-50%, 0, 0); }
+    100% { opacity: 1; transform: none; }
+  }
+  
+  .u--fadeInLeft {
+    -webkit-animation: fadeInLeft $ANIMATION_DURATION ease-in;
+    -moz-animation:    fadeInLeft $ANIMATION_DURATION ease-in;
+    -o-animation:      fadeInLeft $ANIMATION_DURATION ease-in;
+    animation:         fadeInLeft $ANIMATION_DURATION ease-in;
+  }
+  
+  // Fade In Right
+  //--------------------------------//
+  @-webkit-keyframes fadeInRight {
+    0%   { opacity: 0; -webkit-transform: translate3d(50%, 0, 0);}
+    100% { opacity: 1; -webkit-transform: none; }
+  }
+  @-moz-keyframes fadeInRight {
+    0%   { opacity: 0; -moz-transform: translate3d(50%, 0, 0); }
+    100% { opacity: 1; -moz-transform: none; }
+  }
+  @-o-keyframes fadeInRight{
+    0%   { opacity: 0; -o-transform: translate3d(50%, 0, 0); }
+    100% { opacity: 1; -o-transform: none; }
+  }
+  @keyframes fadeInRight {
+    0%   { opacity: 0; transform: translate3d(50%, 0, 0); }
+    100% { opacity: 1; transform: none; }
+  }
+  
+  .u--fadeInRight {
+    -webkit-animation: fadeInRight $ANIMATION_DURATION ease-in;
+    -moz-animation:    fadeInRight $ANIMATION_DURATION ease-in;
+    -o-animation:      fadeInRight $ANIMATION_DURATION ease-in;
+    animation:         fadeInRight $ANIMATION_DURATION ease-in;
+  }
+
+  .Trending, .our-products, .News, .feed{
+    position: relative; 
+    top: 500px;
+    h2 {
+        font-weight: 500;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 100px;
+        font-size: 48px;
+    }
+
+}
+
+.Trending, .our-products {
+    .product-card {
+        width: 400px;
+        overflow: hidden;
+        .product-img {
+            display: flex;
+            flex-direction: column;
+
+            .btn {
+                color: #fff;
+                background-color: #7a65bd;
+                width: 70px;
+                align-self: center;
+                position: relative;
+                left: -45px;
+                top: -40px;
+                transition: .5S;
+                visibility: hidden;
+                &:hover {
+                    background-color: #fff;
+                    color: #1f1c29;
+                }
+            }
+
+            &:hover .btn{
+                visibility: visible;
+                position: relative;
+                top: -100PX;
+            }
+
+            img {
+                width: 75%;
+                height: 170px;
+            }
+        }
+
+        .product-title {
+            text-align: start;
+            color: #7a65bd;
+            margin-top: -10px;
+        }
+
+        .prices {
+            .price {
+                font-weight: 600;
+            }
+            .discount {
+                color: #9590a8;
+                text-decoration: line-through;
+                margin-left: 5px;
+            }
+        }
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        color: #fff !important;
+        margin-top: -65px;
+    }
+
+    .swiper-button-prev {
+        margin-left: -8px;
+    }
+
+    .swiper-button-next {
+        margin-right: -8px;
+    }
+}
+
+.our-products {
+    margin-top: 200px;
+
+    .product-img {
+        img {
+            width: 80%;
+        }
+    }
+
+}
+
+.News {
+    margin-top: 200px;
+
+    .News-card-name {
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: #7a65bd;
+    }
+
+    .game-genre-container {
+        margin-top: 2px;
+    }
+
+    .date,.genre {
+        color: #9590a8;
+        position: relative;
+        top: 1px;
+        left: 5px;
+    }
+
+    .News-card-des {
+        color: #9590a8;
+        width: 400px;
+        margin-top: 20px;
+    }
+
+    .News-card-link {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 600;
+        transition: .5s;
+        &:hover  {
+            color: #7a65bd;
+        }
+    }
+}
+
+.contact {
+    position: relative; 
+    top: 500px;
+    margin-top: 200px;
+
+    .contact-detail {
+        width: 40%;
+
+        p {
+            color: #9590a8;
+            font-size: 18px;
+        }
+
+        .contact-icons {
+            width: 30%;
+        }
+    }
+
+    .contact-form {
+        width: 60%;
+        
+        form {
+            width: 100%;
+        }
+
+        .inputName, .inputEmail {
+            width: 45%;
+            height: 45px;
+            margin: 10px;
+            background-color: #3a3747;
+            border: 0;
+            border-radius: 3px;
+            padding: 15px;
+            color: #fff;
+            &::placeholder {
+                color: #fff;
+            }
+        }
+
+        textarea {
+            width: 93%;
+            margin-left: 10px;
+            margin-top: 10px;
+            background-color: #3a3747;
+            border: 0;
+            border-radius: 3px;
+            padding: 15px;
+            color: #fff;
+            &::placeholder {
+                color: #fff;
+            }
+        }
+
+        .submit {
+            width: 15%;
+            height: 35px;
+            margin-left: 10px;
+            margin-top: 20px;
+            background-color: #7a65bd;
+            color: #fff;
+            border: 0;
+            border-radius: 3px;
+        }
+    }
+}
+
+.feed {
+    margin-top: 200px;
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    p {
+        width: 50%;
+        margin: 0 auto 0 auto;
+        color: #9590a8;
+    }
+
+    .Feed-cards {
+        margin-top: 100px;
+        .Feed-card {
+            width: 29%;
+            height: 250px;
+            padding-top: 40px;
+            background-color: #2c2939;
+            border-radius: 3px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            .Feed-card-img {
+                background-color: #373443;
+                width: 80px;
+                height: 80px;
+                border-radius: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+    
+            .Feed-card-des {
+                color: #9590a8;
+            }
+        }
+    }
+}
+
+.footer {
+    position: relative;
+    top: 500px;
+    margin-top: 200px;
+    width: 100%;
+    height: 300px;
+    background-image: url("../Images/bg-footer.jpg");
+    background-size: cover;
+
+    .footer-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .footer-card-icon {
+            width: 130px;
+            height: 100px;
+            border-radius: 10px;
+            background-color: #2c2939;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h5 {
+            margin-top: 10px;
+            margin-left: 20px;
+            width: 100px;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 300px) and (max-width : 400px) {
+      .swiper-wrapper {
+          width: 77%;
+      }
+
+    .navbar{
+        .Nav-links , 
+        .NavIcons {
+            display: none;
+        }
+
+        .Nav-icon {
+            width: 35px;
+            margin-top: -5px;
+        }
+    }
+
+    .home-page {
+        .bg {
+            height: 900px;
+            background-size: cover;
+        }
+
+        .home-page-content {
+            top: 200px;
+            .game-detail {
+                order: 2;
+                margin: 20px auto 0 auto;
+                margin-left: 10px; 
+
+                h1 {
+                    margin-left: -5px;
+                }
+
+                p {
+                    margin-top: 0px;
+                    margin-left: 7px;
+                    font-size: 14px;
+                }
+    
+                .btn {
+                    width: 100px;
+                    margin-left: 7px;
+                }
+
+                .game-rating-home {
+                    margin-left: 7px;
+                }
+            }
+            .game-promo {
+                order: 1;
+                width: 95%;
+                height: auto;
+                margin: 0 auto 20px auto;
+
+            }
+        }
+    }
+    
+    .News {
+
+        .News-Cards {
+            flex-direction: column;
+            align-items: center;
+        }
+        .NewsCard {
+            margin-bottom: 100px;
+            width: 98%;
+            .cardImg {
+                img {
+                    width: 100%;
+                }
+            }
+
+            .News-card-information {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .game-genre-container {
+                margin-left: 2px;
+                margin-top: -5px;
+            }
+        }
+    
+        .News-card-des {
+            font-size: 14px;
+            width: 100%;
+            margin-top: 30px;
+        }
+    }
+
+
+    .contact {
+        .contact-detail {
+            width: 100%;
+
+            .contact-icons {
+                width: 40%;
+            }
+        }
+    
+        .contact-form {
+            margin-top: 50px;
+            width: 100%;
+            
+            .inputName, .inputEmail {
+                width: 95%;
+                margin: 0 0 20px 0;
+            }
+    
+            textarea {
+                width: 95%;
+                margin-left: 0px;
+            }
+    
+            .submit {
+                width: 30%;
+                margin-left: 0px;
+            }
+        }
+    }
+
+    .Trending, .our-products, .News, .feed {
+        h2 {
+            font-size: 36px;
+        }
+    }
+
+    .feed {
+    
+        p {
+            width: 95%;
+            font-size: 14px;
+        }
+    
+        .Feed-cards {
+            margin-top: 100px;
+            flex-direction: column;
+            align-items: center;
+
+            .Feed-card {
+                width: 90%;
+                height: 250px;
+                margin-bottom: 50px;
+        
+                .Feed-card-img {
+                    background-color: #373443;
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+        
+                .Feed-card-des {
+                    color: #9590a8;
+                }
+            }
+        }
+    }
+
+    .footer {
+        height: 500px;
+
+        .footer-card {
+            .footer-card-icon {
+                width: 100px;
+            }
+        }
+    }
+
+    .Trending, .our-products {
+        .product-card {
+            width: 330px;
+            overflow: hidden;
+        }
+    }
+}
+
+
+
+
+@media screen and (min-width: 400px) and (max-width : 600px){
+    .swiper-container {
+        width: 640px;
+      }
+      .swiper-wrapper {
+          width: 67%;
+      }
+
+    .navbar{
+        .Nav-links , 
+        .NavIcons {
+            display: none;
+        }
+
+        .Nav-icon {
+            width: 35px;
+            margin-top: -5px;
+        }
+    }
+
+    .home-page {
+        .bg {
+            height: 900px;
+            background-size: cover;
+        }
+
+        .home-page-content {
+            top: 200px;
+            .game-detail {
+                order: 2;
+                margin: 20px auto 0 auto;
+                margin-left: 10px; 
+
+                h1 {
+                    margin-left: 5px;
+                }
+
+                p {
+                    margin-top: 10px;
+                }
+    
+                .btn {
+                    width: 100px;
+                }
+            }
+            .game-promo {
+                order: 1;
+                width: 90%;
+                height: auto;
+                margin: 0 auto 20px auto;
+
+            }
+        }
+    }
+
+    .News {
+
+        .News-Cards {
+            flex-direction: column;
+            align-items: center;
+        }
+        .NewsCard {
+            margin-bottom: 100px;
+            width: 90%;
+            .cardImg {
+                img {
+                    width: 100%;
+                }
+            }
+
+            .News-card-information {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .game-genre-container {
+                margin-left: 2px;
+                margin-top: -5px;
+            }
+        }
+    
+        .News-card-des {
+            font-size: 14px;
+            width: 380px;
+            margin-top: 30px;
+        }
+    }
+
+
+    .contact {
+        flex-direction: column;
+        align-items: center;
+        .contact-detail {
+            width: 95%;
+
+            .contact-icons {
+                width: 40%;
+            }
+        }
+    
+        .contact-form {
+            margin-top: 50px;
+            width: 95%;
+            
+            .inputName, .inputEmail {
+                width: 95%;
+                margin: 0 0 20px 0;
+            }
+    
+            textarea {
+                width: 95%;
+                margin-left: 0px;
+            }
+    
+            .submit {
+                width: 30%;
+                margin-left: 0px;
+            }
+        }
+    }
+
+    .Trending, .our-products, .News, .feed {
+        h2 {
+            font-size: 36px;
+        }
+    }
+
+    .feed {
+    
+        p {
+            width: 95%;
+            font-size: 14px;
+        }
+    
+        .Feed-cards {
+            margin-top: 100px;
+            flex-direction: column;
+            align-items: center;
+
+            .Feed-card {
+                width: 70%;
+                height: 250px;
+                margin-bottom: 50px;
+        
+                .Feed-card-img {
+                    background-color: #373443;
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+        
+                .Feed-card-des {
+                    color: #9590a8;
+                }
+            }
+        }
+    }
+
+    .footer {
+        height: 500px;
+
+        .footer-card {
+            .footer-card-icon {
+                width: 100px;
+            }
+        }
+    }
+}
+  
+  @media screen and (min-width: 600px) and (max-width : 768px){
+    .swiper-container {
+        width: 640px;
+      }
+      .swiper-wrapper {
+          width: 60%;
+      }
+  
+      .navbar{
+          .Nav-links , 
+          .NavIcons {
+              display: none;
+          }
+  
+          .Nav-icon {
+              width: 35px;
+              margin-top: -5px;
+          }
+      }
+  
+      .home-page {
+          .bg {
+              height: 900px;
+              background-size: cover;
+          }
+  
+          .home-page-content {
+              top: 200px;
+              .game-detail {
+                  order: 2;
+                  margin: 20px auto 0 auto;
+                  margin-left: 10px; 
+  
+                  h1 {
+                      margin-left: 5px;
+                  }
+  
+                  p {
+                      margin-top: 10px;
+                  }
+      
+                  .btn {
+                      width: 100px;
+                  }
+              }
+              .game-promo {
+                  order: 1;
+                  width: 90%;
+                  height: auto;
+                  margin: 0 auto 20px auto;
+  
+              }
+          }
+      }
+  
+      .News {
+  
+          .News-Cards {
+              flex-direction: column;
+              align-items: center;
+          }
+          .NewsCard {
+              margin-bottom: 100px;
+              width: 90%;
+              .cardImg {
+                  img {
+                      width: 100%;
+                  }
+              }
+  
+              .News-card-information {
+                  display: flex;
+                  flex-direction: column;
+              }
+  
+              .game-genre-container {
+                  margin-left: 2px;
+                  margin-top: -5px;
+              }
+          }
+      
+          .News-card-des {
+              font-size: 14px;
+              width: 380px;
+              margin-top: 30px;
+          }
+      }
+  
+  
+      .contact {
+          flex-direction: column;
+          align-items: center;
+          .contact-detail {
+              width: 95%;
+  
+              .contact-icons {
+                  width: 40%;
+              }
+          }
+      
+          .contact-form {
+              margin-top: 50px;
+              width: 95%;
+              
+              .inputName, .inputEmail {
+                  width: 95%;
+                  margin: 0 0 20px 0;
+              }
+      
+              textarea {
+                  width: 95%;
+                  margin-left: 0px;
+              }
+      
+              .submit {
+                  width: 30%;
+                  margin-left: 0px;
+              }
+          }
+      }
+  
+      .Trending, .our-products, .News, .feed {
+          h2 {
+              font-size: 36px;
+          }
+      }
+  
+      .feed {
+      
+          p {
+              width: 95%;
+              font-size: 14px;
+          }
+      
+          .Feed-cards {
+              margin-top: 100px;
+              flex-direction: column;
+              align-items: center;
+  
+              .Feed-card {
+                  width: 70%;
+                  height: 250px;
+                  margin-bottom: 50px;
+          
+                  .Feed-card-img {
+                      background-color: #373443;
+                      width: 80px;
+                      height: 80px;
+                      border-radius: 40px;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                  }
+          
+                  .Feed-card-des {
+                      color: #9590a8;
+                  }
+              }
+          }
+      }
+  
+      .footer {
+          height: 500px;
+  
+          .footer-card {
+              .footer-card-icon {
+                  width: 130px;
+              }
+          }
+      }
+}
+
